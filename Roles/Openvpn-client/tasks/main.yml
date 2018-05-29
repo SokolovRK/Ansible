@@ -1,0 +1,23 @@
+# file: roles/clntrl/tasks/main.yml
+---
+
+- name: Get specific variables
+  include_vars: "Ubuntu.yml"
+
+- name: Install client
+  command: apt-get -y install {{ openvpn_service }}
+  tags:
+    - install
+
+- name: Generate client configuration
+  template:
+    src: "{{ openvpn_fl_conf_j2 }}"
+    dest: "{{ openvpn_fl_conf }}"
+  tags:
+    - config
+
+- name: Start client daemon
+  service:
+    name: {{ openvpn_service }}
+    state: started
+    enabled: yes

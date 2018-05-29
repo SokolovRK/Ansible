@@ -1,0 +1,8 @@
+# file: roles/clntrl/vars/Ubuntu.yml
+---
+
+# Installation settings
+openvpn_etcdir: /etc/openvpn
+openvpn_fl_conf: {{ openvpn_etcdir }}/client.conf
+openvpn_fl_conf_j2: templates{{ openvpn_fl_conf }}.j2
+openvpn_service: openvpn
