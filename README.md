@@ -31,6 +31,7 @@ openvpn_auth_tls: yes           # Use TLS key
 Example Playbook
 ----------------
 
+```yaml
 - hosts: all
 
   vars:
@@ -42,6 +43,7 @@ Example Playbook
 
   tags:
     - forclient
+```
 
 License
 -------
