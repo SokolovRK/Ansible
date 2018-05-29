@@ -53,4 +53,4 @@ MIT
 Author Information
 ------------------
 
-Sokolov RK
+SokolovRK
