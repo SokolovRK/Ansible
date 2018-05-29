@@ -28,8 +28,8 @@ openvpn_auth_tls: yes           # Use TLS key
 
 ```
 
-Example Playbook
-----------------
+Example
+-------
 
 ```yaml
 - hosts: all
