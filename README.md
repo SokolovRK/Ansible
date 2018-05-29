@@ -6,7 +6,7 @@ Ansible role. Install openvpn client and start the service.
 Requirements
 ------------
 
-Ubuntu Server 16 Xenial Xerus
+Ubuntu Server Xenial Xerus
 
 Variables
 ---------
